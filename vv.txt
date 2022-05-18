@@ -1,0 +1,158 @@
+
+const labelOption = {
+ show: true,
+ position: 'insideRight'
+}
+const tooltipOption = {
+ trigger: 'item',
+ axisPointer: {
+  type: 'shadow'
+ },
+ formatter: '⼀班<br />故障：10H 20%<br />运⾏：20H 20%<br />暂停：30H 20%<br />离线：25H 20%'
+}
+const data = {
+ color: ['#F56C6C', '#FFC53A', '#7CA870', '#999999'],
+ legend: {
+            data: ['故障', '暂停', '运⾏', '离线']
+ },
+ tooltip: {
+  trigger: 'axis',
+  axisPointer: {
+   type: 'shadow'
+  }
+ },
+ grid: {
+  left: '3%',
+  right: '4%',
+  bottom: '3%',
+  containLabel: true
+ },
+ xAxis: [
+  {
+   type: 'category',
+   data: ['冲压机床#1', '冲压机床#2', '冲压机床#3', '冲压机床#4'],
+   axisTick: {
+    alignWithLabel: true
+   }
+  }
+ ],
+        yAxis: [
+  {
+   type: 'value',
+   axisLabel: {
+       formatter: '{value}%'
+   }
+  }
+ ],
+ series: [
+  {
+   name: '故障',
+   type: 'bar',
+   stack: '⼀班',
+   label: labelOption,
+   barWidth: '10%',
+   data: [20, 30,40, 60],
+   tooltip: tooltipOption
+  },
+  {
+   name: '暂停',
+   type: 'bar',
+   stack: '⼀班',
+   label: labelOption,
+   barWidth: '10%',
+   data: [21, 30,40, 60],
+   tooltip: tooltipOption
+  },
+  {
+   name: '运⾏',
+   type: 'bar',
+   stack: '⼀班',
+   label: labelOption,
+   barWidth: '10%',
+   data: [22, 30,40, 60],
+   tooltip: tooltipOption
+  },
+  {
+   name: '离线',
+   type: 'bar',
+   stack: '⼀班',
+   label: labelOption,
+   barWidth: '10%',
+   data: [23, 30,40, 60],
+   tooltip: tooltipOption
+  },
+  {
+   name: '故障',
+   type: 'bar',
+   stack: '⼆班',
+   label: labelOption,
+   barWidth: '10%',
+   data: [20, 30,40, 60],
+   tooltip: tooltipOption
+  },
+  {
+   name: '暂停',
+   type: 'bar',
+   stack: '⼆班',
+   label: labelOption,
+   barWidth: '10%',
+   data: [21, 30,40, 60],
+   tooltip: tooltipOption
+  },
+  {
+   name: '运⾏',
+   type: 'bar',
+   stack: '⼆班',
+   label: labelOption,
+   barWidth: '10%',
+   data: [22, 30,40, 60],
+   tooltip: tooltipOption
+  },
+  {
+   name: '离线',
+   type: 'bar',
+   stack: '⼆班',
+   label: labelOption,
+   barWidth: '10%',
+   data: [23, 30,40, 60],
+   tooltip: tooltipOption
+  },
+  {
+   name: '故障',
+   type: 'bar',
+   stack: '三班',
+   label: labelOption,
+   barWidth: '10%',
+   data: [20, 30,40, 60],
+   tooltip: tooltipOption
+  },
+  {
+   name: '暂停',
+   type: 'bar',
+   stack: '三班',
+   label: labelOption,
+   barWidth: '10%',
+   data: [21, 30,40, 60],
+   tooltip: tooltipOption
+  },
+  {
+   name: '运⾏',
+   type: 'bar',
+   stack: '三班',
+   label: labelOption,
+   barWidth: '10%',
+   data: [22, 30,40, 60],
+   tooltip: tooltipOption
+  },
+  {
+   name: '离线',
+   type: 'bar',
+   stack: '三班',
+   label: labelOption,
+          barWidth: '10%',
+   data: [23, 30,40, 60],
+   tooltip: tooltipOption
+  }
+ ]
+}
+
