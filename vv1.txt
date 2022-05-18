@@ -1,0 +1,10 @@
+toolbox: {
+    show: true,
+        right: '5%',
+        feature: {
+        dataView: {
+            readOnly: true              
+        },
+        magicType: {type: ['line', 'bar']}
+    }
+},
